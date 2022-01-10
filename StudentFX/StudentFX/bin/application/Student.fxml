@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StudentController">
+   <children>
+      <Label fx:id="lblListStudents" layoutX="21.0" layoutY="29.0" text="List of students">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblStuDetails" layoutX="258.0" layoutY="29.0" text="Student details">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblName" layoutX="258.0" layoutY="55.0" text="Name" />
+      <Label fx:id="lblGender" layoutX="258.0" layoutY="111.0" text="Gender" />
+      <Label fx:id="lblDOB" layoutX="256.0" layoutY="163.0" text="Date of birth" />
+      <Label fx:id="lblMark" layoutX="256.0" layoutY="214.0" text="Mark" />
+      <Label fx:id="lblComments" layoutX="256.0" layoutY="266.0" text="Comments" />
+      <Label fx:id="lblPhoto" layoutX="447.0" layoutY="55.0" text="Photo" />
+      <ImageView fx:id="imgPhoto" fitHeight="123.0" fitWidth="123.0" layoutX="447.0" layoutY="78.0" onMouseClicked="#chooseImage" pickOnBounds="true" preserveRatio="true" />
+      <ListView fx:id="listStudents" layoutX="21.0" layoutY="54.0" prefHeight="291.0" prefWidth="200.0" />
+      <TextField fx:id="txtName" layoutX="258.0" layoutY="77.0" />
+      <ComboBox fx:id="boxGender" layoutX="258.0" layoutY="128.0" prefHeight="25.0" prefWidth="149.0">
+      </ComboBox>
+      <DatePicker fx:id="dateDOB" layoutX="256.0" layoutY="179.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="txtMark" layoutX="258.0" layoutY="231.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextArea fx:id="txtComments" layoutX="256.0" layoutY="283.0" prefHeight="62.0" prefWidth="317.0" />
+      <Button fx:id="btnEdit" disable="true" layoutX="255.0" layoutY="355.0" mnemonicParsing="false" onAction="#onEdit" prefHeight="25.0" prefWidth="58.0" text="Edit" />
+      <Button fx:id="btnSave" disable="true" layoutX="450.0" layoutY="355.0" mnemonicParsing="false" onAction="#onSave" prefHeight="25.0" prefWidth="58.0" text="Save" />
+      <Button fx:id="btnCancel" disable="true" layoutX="515.0" layoutY="355.0" mnemonicParsing="false" onAction="#onCancel" prefHeight="25.0" prefWidth="58.0" text="Cancel" />
+      <Label fx:id="lblURL" layoutX="449.0" layoutY="206.0" text="Label" visible="false" />
+      <Button fx:id="btnNew" layoutX="21.0" layoutY="355.0" mnemonicParsing="false" onAction="#onNew" prefHeight="25.0" prefWidth="123.0" text="Add a new student" />
+      <Button fx:id="btnDelete" disable="true" layoutX="324.0" layoutY="355.0" mnemonicParsing="false" onAction="#onDelete" prefHeight="25.0" prefWidth="58.0" text="Delete" />
+   </children>
+</AnchorPane>
