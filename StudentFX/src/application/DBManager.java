@@ -146,7 +146,7 @@ public class DBManager
 	{
 		try
 		{
-			Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/student?serverTimezone=UTC", "root", "root");
+			Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/{databaseName}?serverTimezone=UTC", "{user}", "{mdp}");
 			return connection;
 		}
 		catch ( Exception e)
