@@ -7,10 +7,10 @@ Le repo est organisé selon le modèle MVC : Model (classes Java), View (documen
 # Environnement : 
 - Java Developpement kit
 - Eclipse IDE
-- Javefx plugin
+- Javafx plugin
 - SceneBuilder
 - MySql Workbench 8.0
 
 # En cas d'utilisation 
-- Utiliser le fichier SQL pour créer la BDD
+- Utiliser le fichier student.sql pour créer la BDD
 - Modifier la ligne 149 du fichier DBManager.java pour indiquer le nom de la database, l'utilisateur, et le mot de passe
